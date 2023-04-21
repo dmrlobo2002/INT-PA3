@@ -192,7 +192,7 @@ public class Server {
         return getTopGames(numGames); // return a message with the top numGames games
       case "platform":
         if (tokens.length < 2) { // if there are not enough tokens, return an error message
-          return "Invalid command. Usage: platformsearch <platform> \n<endoftransmission>";
+          return "Invalid command. Usage: platform <platform> \n<endoftransmission>";
         }
         if (tokens[1].equals("null")) platformFilter = null; else if ( // if the second token is "null", clear the platform filter
           !platforms.contains(tokens[1])
